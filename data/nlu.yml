@@ -1,0 +1,110 @@
+version: "3.1"
+
+nlu:
+- intent: hola
+  examples: |
+    - hey
+    - hola
+    - hola tu
+    - Buenos dias
+    - Buenas tardes
+    - Dias
+    - Que cuentas
+    - hey tu
+    - Hey tio
+
+- intent: Adios
+  examples: |
+    - Chao
+    - Te veo luego
+    - Buenas noches
+    - Adios
+    - Chaito
+    - ten un buen dia
+    - Hablamos luego
+    - Hablamos despues
+    - Chau
+    - Bye
+
+- intent: Si
+  examples: |
+    - Si
+    - S
+    - De acuerdo
+    - Cuenta conmigo
+    - Por supuesto
+    - Suena bien
+    - correcto
+
+- intent: No
+  examples: |
+    - No
+    - n
+    - Nunca
+    - Yo no creo eso
+    - No me gusta eso
+    - No creo
+    - No realmente
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+
+- intent: iglaturroña
+  examples: |
+    - osama vinladen
+    - lolipop
+    - ingaingaturroña
+    - ingaturroña
+    - fsdfsdfsdfsd
+    - hfghfghfgh
+    - mmsdfmsdfsdf
+    - xxxxxxxxxxxx
+    - nnnnnnnnnnn
+    - rrrrrrrrrr
+
+
+- intent: hermanita
+  examples: |
+   - hoja
+   - stephanie
+   - steffy
+   - sister

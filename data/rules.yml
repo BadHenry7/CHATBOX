@@ -1,0 +1,24 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: Adios
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+
+- rule: Say 'Que pedo dijistes ahi cuando no entienda algo
+  steps:
+  - intent: iglaturroña
+  - action: utter_iglaturroña
+
+- rule: Say 'steffy
+  steps:
+  - intent: hermanita
+  - action: utter_hermanita
