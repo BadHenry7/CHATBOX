@@ -5,49 +5,108 @@ intents:
   - Adios
   - Si
   - No
+  - agradecimiento
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - agendar_cita
+  - consultar_cita
+  - sintomas
+  - informacion_hospital
+  - descargar_certificado
+  - generar_reporte
   - iglaturroña
+  - repeticion_caracteres
   - hermanita
+  - out_of_scope
 
 actions:
-  - utter_greet
-  - utter_cheer_up
-  - utter_did_that_help
-  - utter_happy
-  - utter_goodbye
+  - utter_saludo
+  - utter_despedida
+  - utter_afirmativo
+  - utter_negativo
+  - utter_agradecimiento
+  - utter_feliz
+  - utter_triste
   - utter_iamabot
+  - utter_agendar_cita
+  - utter_consultar_cita
+  - utter_consultar_sintomas
+
+  - utter_informacion_hospital
+  - utter_descargar_certificado
+  - utter_generar_reporte
   - utter_iglaturroña 
+  - utter_repeticion_caracteres
   - utter_hermanita
+  - utter_out_of_scope
+  - utter_did_that_help
 
 
 
 responses:
-  utter_greet:
-  - text: "Hey! How are you?"
+  utter_saludo:
+  - text: "Hola soy Tonyo, tu asistente medico personal, como estas?"
+   
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
+  utter_despedida:
+  - text: "Adios"
+
+  utter_afirmativo:
+    - text: "¡Genial!"
+  
+  utter_negativo:
+    - text: "Entiendo, no hay problema."
+
+  utter_agradecimiento:
+    - text: "¡De nada! Siempre estoy aquí para ayudar."
+
+  utter_feliz:
+    - text: "¡Me alegra saberlo! 😊"
+  
+  utter_triste:
+  - text: "Aquí hay algo para animarte:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
 
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
-  utter_goodbye:
-  - text: "Bye"
-
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "Yo soy un bot, me llamo Tonyo, tu asistente medico virtual."
+
+  utter_agendar_cita:
+    - text: "Para agendar una cita, ve a la opcion de 'Agendar cita medica'"
+
+  utter_consultar_cita:
+    - text: "Para consultar tu cita ve a la opcion de 'Consultar cita'"
+  
+  utter_consultar_sintomas:
+    - text: "Si te sientes enfermo, por favor, agendar tu cita en la opcion de Agendar cita"
+
+
+  utter_informacion_hospital:
+    - text: "En el pie de pagina encontraras informacion del hospital asi como tambien en la vista ubicaciones del navbar encotraras los hospitales mas cercanos"
+
+  utter_descargar_certificado:
+    - text: "Para descargar la incapacidad, ve a la vista 'Incapacidad medica'"
+
+  utter_generar_reporte:
+    - text: "Para realizar reportes, ve a la vista 'Reportes'"
   
   utter_iglaturroña:
-    - text: "Lo siento, no entendí eso. ¿Acaso se te cayo el cerebro?"
+    - text: "Lo siento, no entendí eso."
+
+  utter_repeticion_caracteres:
+    - text: "Parece que estás divirtiéndote con el teclado. 😄"
+  
   
   utter_hermanita:
     - text: "Muchacha, cuidado con la china inteligente"
+
+  utter_out_of_scope:
+    - text: "Lo siento, pero no tengo información sobre eso."
+
+  utter_did_that_help:
+  - text: "Eso te ayuda?"  
+
+  
 
 session_config:
   session_expiration_time: 60

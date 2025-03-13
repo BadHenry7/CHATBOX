@@ -2,10 +2,45 @@ version: "3.1"
 
 rules:
 
+- rule: Responder a un saludo
+  steps:
+  - intent: hola
+  - action: utter_saludo
+
+
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: Adios
-  - action: utter_goodbye
+  - action: utter_despedida
+
+
+- rule: Responder afirmativamente
+  steps:
+  - intent: Si
+  - action: utter_afirmativo
+
+
+- rule: Responder negativamente
+  steps:
+  - intent: No
+  - action: utter_negativo
+
+- rule: Responder a un agradecimiento
+  steps:
+  - intent: agradecimiento
+  - action: utter_agradecimiento
+
+- rule: Responder a un estado de ánimo positivo
+  steps:
+  - intent: mood_great
+  - action: utter_feliz
+
+- rule: Responder a un estado de ánimo negativo
+  steps:
+  - intent: mood_unhappy
+  - action: utter_triste
+  - action: utter_did_that_help
+
 
 - rule: Say 'I am a bot' anytime the user challenges
   steps:
@@ -13,12 +48,58 @@ rules:
   - action: utter_iamabot
 
 
+- rule: Agendar una cita médica
+  steps:
+  - intent: agendar_cita
+  - action: utter_agendar_cita
+
+- rule: Consultar cita médica
+  steps:
+  - intent: consultar_cita
+  - action: utter_consultar_cita
+
+
+- rule: Consultar síntomas
+  steps:
+  - intent: sintomas
+  - action: utter_consultar_sintomas
+
+- rule: Información sobre el hospital
+  steps:
+  - intent: informacion_hospital
+  - action: utter_informacion_hospital
+
+
+
+- rule: Descargar certificado médico
+  steps:
+  - intent: descargar_certificado
+  - action: utter_descargar_certificado
+
+- rule: Generar reporte médico
+  steps:
+  - intent: generar_reporte
+  - action: utter_generar_reporte
+
+
 - rule: Say 'Que pedo dijistes ahi cuando no entienda algo
   steps:
   - intent: iglaturroña
   - action: utter_iglaturroña
 
+- rule: Manejar repetición de caracteres
+  steps:
+  - intent: repeticion_caracteres
+  - action: utter_repeticion_caracteres
+
+
 - rule: Say 'steffy
   steps:
   - intent: hermanita
   - action: utter_hermanita
+
+
+- rule: Manejar consultas fuera de contexto
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope

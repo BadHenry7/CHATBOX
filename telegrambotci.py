@@ -2,7 +2,7 @@ import logging
 import aiohttp
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, CallbackContext
-import telegramresponses
+
 
 
 API_KEY= "8058464930:AAGJHZB3havwO9qgPGSBensfoUrzTKsEGl4"

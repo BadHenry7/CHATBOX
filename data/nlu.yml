@@ -23,7 +23,7 @@ nlu:
     - ten un buen dia
     - Hablamos luego
     - Hablamos despues
-    - Chau
+    - Chao
     - Bye
 
 - intent: Si
@@ -46,60 +46,157 @@ nlu:
     - No creo
     - No realmente
 
+
+- intent: agradecimiento
+  examples: |
+    - gracias
+    - muchas gracias
+    - te lo agradezco
+    - mil gracias
+    - muy amable
+    - gracias por tu ayuda
+    - se agradece
+    - aprecio tu ayuda
+
+  
+
+
 - intent: mood_great
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - perfecto
+    - genial
+    - increíble
+    - me siento como un rey
+    - maravilloso
+    - me siento muy bien
+    - estoy genial
+    - soy increíble
+    - voy a salvar el mundo
+    - súper emocionado
+    - extremadamente bien
+    - tan, tan perfecto
+    - tan bien
+    - tan perfecto
 
 - intent: mood_unhappy
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - mi día fue horrible
+    - estoy triste
+    - no me siento muy bien
+    - estoy decepcionado
+    - súper triste
+    - estoy tan triste
+    - triste
+    - muy triste
+    - infeliz
+    - no estoy bien
+    - no muy bien
+    - extremadamente triste
+    - tan triiiste
+    - tan triste
 
 - intent: bot_challenge
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - ¿eres un bot?
+    - ¿eres un humano?
+    - ¿estoy hablando con un bot?
+    - ¿estoy hablando con un humano?
+    - ¿Qué puedes hacer?
+    - ¿Para qué sirves?
+    - ¿Cómo me puedes ayudar?
+    - ¿Cuáles son tus funciones?
+    - ¿Qué tipo de información manejas?
+    - ¿Quién te creó?
+    - ¿Eres un bot inteligente?
+
+
+
+- intent: agendar_cita
+  examples: |
+    - Quiero agendar una cita médica
+    - Necesito pedir una consulta
+    - ¿Puedes ayudarme a reservar una cita?
+    - Quiero programar una consulta con el doctor
+    - ¿Cómo agendo una cita?
+    - Quiero una cita con el médico para la próxima semana
+    - Reservar una consulta para mañana
+
+- intent: consultar_cita
+  examples: |
+    - ¿Cuándo tengo mi próxima cita?
+    - Quisiera saber la fecha de mi consulta
+    - ¿A qué hora es mi cita médica?
+    - ¿Puedes decirme cuándo tengo cita con el doctor?
+    - ¿Dónde puedo ver mis citas programadas?    
+
+
+- intent: sintomas
+  examples: |
+    - Tengo fiebre y dolor de cabeza, ¿qué hago?
+    - Me duele mucho el estómago, ¿qué puede ser?
+    - He estado tosiendo bastante, ¿es grave?
+    - Siento mareos y náuseas
+    - ¿Qué significa si tengo dolor en el pecho?
+    - Me duele la garganta y tengo fiebre   
+
+
+- intent: informacion_hospital
+  examples: |
+    - ¿Dónde está el hospital más cercano?
+    - ¿Cuáles son los horarios de atención del centro médico?
+    - ¿Cuál es la dirección del hospital?
+    - ubicaciones
+
+- intent: descargar_certificado
+  examples: |
+    - Quiero descargar mi incapacidad médica
+    - ¿Dónde puedo obtener una incapacidad?
+    - Necesito una incapacidad
+    - ¿Cómo descargo un ana orden medica?
+    - ¿Dónde encuentro mi incapacidad médicos?
+
+
+- intent: generar_reporte
+  examples: |
+    - Quiero generar un reporte médico
+    - Necesito un informe de mis consultas médicas
+    - ¿Cómo obtengo un reporte de mis citas?
+    - ¿Dónde puedo descargar mi historial de consultas?
+    - ¿Me puedes enviar un resumen de mis visitas médicas?
+    - Quisiera un informe de mis exámenes médicos
+    - ¿Cómo solicito un reporte de mi estado de salud?
 
 
 - intent: iglaturroña
   examples: |
-    - osama vinladen
-    - lolipop
-    - ingaingaturroña
-    - ingaturroña
-    - fsdfsdfsdfsd
-    - hfghfghfgh
-    - mmsdfmsdfsdf
-    - xxxxxxxxxxxx
-    - nnnnnnnnnnn
-    - rrrrrrrrrr
+    - asdkjashdkajshd
+    - skdjfsdjklfsdkljf
+    - lksajdklasjdklajsd
+    - qweqweqweqweqwe
+    - zmxnvmxzvnmzxvn
+    - poiupoipoipoipoip
+    - aksjdhnwkejrbcas
+    - oiqweoiqweoiqwe
+    - zxczxczxczxcxzxc
+    - mnbmnbmnbmnbmnb
+
+- intent: repeticion_caracteres
+  examples: |
+    - kkkkkkkkkk
+    - jajajajaja
+    - lololololo
+    - asdasdasdasd
+    - hehehehehe
+    - hohohohoho
+    - hihihihihi
+    - jejejejejeje
+    - xdxdxdxdxd
+    - qwqwqwqwqwq
+    - mmmmmmmmmmmmm
+    - nnnnnnnn
+    - qqqqqqq
+    - wwwwwwww
+    - tttttttt
 
 
 - intent: hermanita
@@ -108,3 +205,16 @@ nlu:
    - stephanie
    - steffy
    - sister
+
+- intent: out_of_scope
+  examples: |
+    - ¿Cuánto cuesta un carro?
+    - ¿Quién ganó el último mundial?
+    - ¿Puedes contarme un chiste?
+    - ¿Cómo se hace una pizza?
+    - ¿Cuál es la capital de Japón?
+    - ¿Qué opinas de la política?
+    - ¿Sabes quién soy?
+    - ¿Cómo invierto en criptomonedas?
+    - ¿Quién es el mejor futbolista del mundo?
+    - Dime un dato curioso
