@@ -21,4 +21,4 @@ EXPOSE 5005
 
 # Comando para correr el servidor Rasa
 # CMD ["rasa", "run", "--enable-api", "--cors", "*", "--debug"]
-CMD ["rasa", "run", "--enable-api", "--cors", "*", "--debug", "--model", "/app/models/20250313-160938-corn-hour.tar.gz"]
+CMD ["rasa", "run", "--enable-api", "--cors", "*", "--debug", "--model", "models/20250313-160938-corn-hour.tar.gz"]
