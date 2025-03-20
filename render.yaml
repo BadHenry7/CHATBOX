@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: rasa-chatbox
-    env: docker
-    plan: free
-    branch: main
-    dockerfilePath: Dockerfile
-    region: oregon

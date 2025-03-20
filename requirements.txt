@@ -1,2 +1,3 @@
 rasa==3.6.10
-python-telegram-bot
+rasa-sdk==3.6.0
+python-telegram-bot==13.15
