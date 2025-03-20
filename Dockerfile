@@ -16,9 +16,12 @@ COPY . /app
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
+# Entrenar modelo automáticamente
+RUN rasa train
+
 # Exponer puerto
 EXPOSE 5005
 
 # Comando para correr el servidor Rasa
 # CMD ["rasa", "run", "--enable-api", "--cors", "*", "--debug"]
-CMD ["rasa", "run", "--enable-api", "--cors", "*", "--debug", "--model", "models/20250313-160938-corn-hour.tar.gz"]
+CMD ["rasa", "run", "--enable-api", "--cors", "*", "--debug"]
