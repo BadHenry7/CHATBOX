@@ -20,4 +20,5 @@ RUN pip install -r requirements.txt
 EXPOSE 5005
 
 # Comando para correr el servidor Rasa
-CMD ["rasa", "run", "--enable-api", "--cors", "*", "--debug"]
+# CMD ["rasa", "run", "--enable-api", "--cors", "*", "--debug"]
+CMD ["rasa", "run", "--enable-api", "--cors", "*", "--debug", "--model", "/app/models"]
