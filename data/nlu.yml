@@ -199,12 +199,7 @@ nlu:
     - tttttttt
 
 
-- intent: hermanita
-  examples: |
-   - hoja
-   - stephanie
-   - steffy
-   - sister
+
 
 - intent: out_of_scope
   examples: |
@@ -218,3 +213,9 @@ nlu:
     - ¿Cómo invierto en criptomonedas?
     - ¿Quién es el mejor futbolista del mundo?
     - Dime un dato curioso
+
+- intent: dar_cedula
+  examples: |
+    - mi cédula es [12345678](cedula)
+    - cédula [987654321](cedula)
+    - mi número de documento es [11223344](cedula)

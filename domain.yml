@@ -17,8 +17,8 @@ intents:
   - generar_reporte
   - iglaturroña
   - repeticion_caracteres
-  - hermanita
   - out_of_scope
+  - dar_cedula
 
 actions:
   - utter_saludo
@@ -32,17 +32,27 @@ actions:
   - utter_agendar_cita
   - utter_consultar_cita
   - utter_consultar_sintomas
-
   - utter_informacion_hospital
   - utter_descargar_certificado
   - utter_generar_reporte
   - utter_iglaturroña 
   - utter_repeticion_caracteres
-  - utter_hermanita
   - utter_out_of_scope
   - utter_did_that_help
+  - utter_ultima_cita
+  - action_ultima_cita
+
+entities:
+  - cedula
 
 
+slots:
+  cedula:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: cedula
 
 responses:
   utter_saludo:
@@ -96,9 +106,6 @@ responses:
   utter_repeticion_caracteres:
     - text: "Parece que estás divirtiéndote con el teclado. 😄"
   
-  
-  utter_hermanita:
-    - text: "Muchacha, cuidado con la china inteligente"
 
   utter_out_of_scope:
     - text: "Lo siento, pero no tengo información sobre eso."
@@ -106,6 +113,9 @@ responses:
   utter_did_that_help:
   - text: "Eso te ayuda?"  
 
+ 
+  utter_ultima_cita:
+  - text: "Tu última cita fue el {fecha} con el doctor {doctor}."
   
 
 session_config:

@@ -39,3 +39,7 @@ rasa init
 
 #para telegram:
 pip install python-telegram-bot
+
+
+#para correr el actions:
+rasa run actions

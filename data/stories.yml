@@ -37,3 +37,9 @@ stories:
   - action: utter_iglaturroña
   - intent: out_of_scope
   - action: utter_out_of_scope
+
+
+- story: obtener ultima cita
+  steps:
+  - intent: dar_cedula
+  - action: action_ultima_cita

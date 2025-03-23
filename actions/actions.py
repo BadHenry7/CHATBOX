@@ -12,6 +12,7 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 
+import aiohttp
 
 class ActionHelloWorld(Action):
 
@@ -24,4 +25,36 @@ class ActionHelloWorld(Action):
 
         dispatcher.utter_message(text="Hello World!")
 
+        return []
+    
+
+class BuscarCitas(Action):
+
+    def name(self) -> Text:
+        return "action_ultima_cita"
+    
+
+    async def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        user_cedula = tracker.get_slot("cedula")
+        print("--------------", user_cedula)
+        
+        payload = {
+            "cedula": user_cedula 
+        }
+        async with aiohttp.ClientSession() as session:
+            async with session.post("http://127.0.0.1:8000/get_ultima_cita", json=payload) as response:
+                rasa_response = await response.json()
+                print(rasa_response)
+                v_fecha = rasa_response["fecha"]
+                v_doctor = rasa_response["doctor"]
+     
+
+                dispatcher.utter_message(
+                response="utter_ultima_cita",
+                fecha=v_fecha,
+                doctor=v_doctor
+        )
         return []

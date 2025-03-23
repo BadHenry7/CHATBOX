@@ -93,10 +93,7 @@ rules:
   - action: utter_repeticion_caracteres
 
 
-- rule: Say 'steffy
-  steps:
-  - intent: hermanita
-  - action: utter_hermanita
+
 
 
 - rule: Manejar consultas fuera de contexto
