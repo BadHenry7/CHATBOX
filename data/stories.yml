@@ -39,7 +39,45 @@ stories:
   - action: utter_out_of_scope
 
 
-- story: obtener ultima cita
+- story: consultar cita directo
   steps:
+  - intent: consultar_cita
+  - action: utter_dar_cedula
   - intent: dar_cedula
   - action: action_ultima_cita
+
+
+
+
+- story: obtener ultima cita
+  steps:
+  - intent: hola
+  - action: utter_saludo
+  - intent: consultar_cita
+  - action: utter_dar_cedula
+  - intent: dar_cedula
+  - action: action_ultima_cita
+
+
+  
+- story: obtener ultima cita 2
+  steps:
+  - intent: hola
+  - action: utter_saludo
+  - intent: mood_great
+  - action: utter_feliz
+  - intent: consultar_cita
+  - action: utter_dar_cedula
+  - intent: dar_cedula
+  - action: action_ultima_cita
+
+- story: Presentacion como Bymax
+  steps:
+  - intent: hola_presentacion
+  - action: utter_Hola_B
+  - action: utter_Hola_B2
+  - action: utter_Hola_B3
+ 
+
+
+  

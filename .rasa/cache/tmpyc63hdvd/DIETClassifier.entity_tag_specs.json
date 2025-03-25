@@ -1,0 +1,20 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-cedula",
+      "2": "I-cedula",
+      "3": "L-cedula",
+      "4": "U-cedula",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-cedula": 1,
+      "I-cedula": 2,
+      "L-cedula": 3,
+      "U-cedula": 4,
+      "O": 0
+    },
+    "num_tags": 5
+  }
+]

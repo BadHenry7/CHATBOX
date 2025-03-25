@@ -19,6 +19,7 @@ intents:
   - repeticion_caracteres
   - out_of_scope
   - dar_cedula
+  - hola_presentacion
 
 actions:
   - utter_saludo
@@ -41,10 +42,12 @@ actions:
   - utter_did_that_help
   - utter_ultima_cita
   - action_ultima_cita
+  - utter_Hola_B
+  - utter_Hola_B2
+  - utter_Hola_B3
 
 entities:
   - cedula
-
 
 slots:
   cedula:
@@ -76,7 +79,7 @@ responses:
   
   utter_triste:
   - text: "Aquí hay algo para animarte:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+    image: "https://preview.redd.it/dgpjg45r7vo61.jpg?width=640&crop=smart&auto=webp&s=c42e8f00f4b8473691dcacac583c84d432a03636"
 
   utter_iamabot:
   - text: "Yo soy un bot, me llamo Tonyo, tu asistente medico virtual."
@@ -98,7 +101,7 @@ responses:
     - text: "Para descargar la incapacidad, ve a la vista 'Incapacidad medica'"
 
   utter_generar_reporte:
-    - text: "Para realizar reportes, ve a la vista 'Reportes'"
+    - text: "Para realizar reportes, ve a la opcion 'Reportes' en el menu superior" 
   
   utter_iglaturroña:
     - text: "Lo siento, no entendí eso."
@@ -111,11 +114,24 @@ responses:
     - text: "Lo siento, pero no tengo información sobre eso."
 
   utter_did_that_help:
-  - text: "Eso te ayuda?"  
+    - text: "Eso te ayuda?"  
 
  
   utter_ultima_cita:
-  - text: "Tu última cita fue el {fecha} con el doctor {doctor}."
+   - text: "Tu última cita fue el {fecha} con el doctor {doctor}."
+
+  utter_dar_cedula:
+    - text: "Hola, me podrias indicar el numero de tu documento de identidad 😄"
+
+  utter_Hola_B:
+    - text: "Voy a inflarme completamente antes de operar correctamente …bzzzt……bzzzt……bzzzt…"
+  
+  utter_Hola_B2:
+    - text: "Hola, soy Baymax, tu asistente medico personal"
+  
+  utter_Hola_B3:
+    - text: "jeje, hola, ¿como estas? 😄 "
+    
   
 
 session_config:

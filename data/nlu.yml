@@ -6,8 +6,6 @@ nlu:
     - hey
     - hola
     - hola tu
-    - Buenos dias
-    - Buenas tardes
     - Dias
     - Que cuentas
     - hey tu
@@ -81,6 +79,7 @@ nlu:
 - intent: mood_unhappy
   examples: |
     - mi día fue horrible
+    - mal
     - estoy triste
     - no me siento muy bien
     - estoy decepcionado
@@ -167,7 +166,7 @@ nlu:
     - ¿Cómo solicito un reporte de mi estado de salud?
 
 
-- intent: iglaturroña
+- intent: ingaturroña
   examples: |
     - asdkjashdkajshd
     - skdjfsdjklfsdkljf
@@ -219,3 +218,25 @@ nlu:
     - mi cédula es [12345678](cedula)
     - cédula [987654321](cedula)
     - mi número de documento es [11223344](cedula)
+    - el documento es [44556677](cedula)
+    - el número de cédula es [99887766](cedula)
+    - te paso mi cédula [22334455](cedula)
+    - mi número de cédula es [33445566](cedula)
+    - documento [77889911](cedula)
+    - es [55667788](cedula)
+    - el número es [66778899](cedula)
+    - cédula número [10111213](cedula
+
+- intent: hola_presentacion
+  examples: |
+    - Hola XD
+    - Hola beymax
+    - Buenos dias
+    - Buenas tardes
+    - Buenas noches
+  
+  
+  
+  
+  
+#tenemos 19--->son 30

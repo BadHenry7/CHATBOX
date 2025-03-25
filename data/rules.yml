@@ -53,10 +53,10 @@ rules:
   - intent: agendar_cita
   - action: utter_agendar_cita
 
-- rule: Consultar cita médica
-  steps:
-  - intent: consultar_cita
-  - action: utter_consultar_cita
+# - rule: Consultar cita médica
+#   steps:
+#   - intent: consultar_cita
+#   - action: utter_consultar_cita
 
 
 - rule: Consultar síntomas
@@ -87,11 +87,11 @@ rules:
   - intent: iglaturroña
   - action: utter_iglaturroña
 
+
 - rule: Manejar repetición de caracteres
   steps:
   - intent: repeticion_caracteres
   - action: utter_repeticion_caracteres
-
 
 
 
