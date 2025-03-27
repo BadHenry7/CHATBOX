@@ -56,7 +56,6 @@ nlu:
     - se agradece
     - aprecio tu ayuda
 
-  
 
 
 - intent: mood_great
@@ -198,8 +197,6 @@ nlu:
     - tttttttt
 
 
-
-
 - intent: out_of_scope
   examples: |
     - ¿Cuánto cuesta un carro?
@@ -225,7 +222,7 @@ nlu:
     - documento [77889911](cedula)
     - es [55667788](cedula)
     - el número es [66778899](cedula)
-    - cédula número [10111213](cedula
+    - cédula número [10111213](cedula)
 
 - intent: hola_presentacion
   examples: |
@@ -234,9 +231,99 @@ nlu:
     - Buenos dias
     - Buenas tardes
     - Buenas noches
+#//////////////////////////////////////////////////////////////////////////
+- intent: Primeros_auxilios
+  examples: |
+    - Cuales son los primeros auxilios?
+    - Que recomendaciones me da para los primeros auxilios?
+    - Como aplico primeros auxilios?
+    - Auxilios basicos  
+    - Que hago si alguien se desmaya?
+    - Recomendaciones de primeros auxilios
+
+- intent: Horario_de_atencion
+  examples: |
+    - A que hora atienden?
+    - Cuando abren?
+    - A que hora abren?
+    - Cual es su horario de atencion?
+    - A que hora puedo llegar al hospital?
+    - Hora de entrada
+    - A que hora cierran?
+    - Hasta cuando esta abierto?
+    - Abren los fines de semana?
+
+
+- intent: Pedir incapacidad
+  examples:  |
+    - Necesito una incapacidad
+    - Como consigo una incapacidad
+    - Donde descargo una incapacidad
+    - Se puede tener una incapacidad
+    - Descargame una incapadidad por favor
+
+- intent: Contacto
+  examples: |
+    - A donde puedo llamar?
+    - A donde puedo escribir?
+    - Tienen algun numero telefonico?
+    - Tienen algun numero de telefono?
+    - Como puedo llamar a la clinica?
+
   
-  
-  
-  
-  
-#tenemos 19--->son 30
+- intent: Ejercicios
+  examples: |
+    - Cuanto ejercicio debo hacer a la semana
+    - El ejercicio se hace diario?
+    - Se hace ejercicio despues de desayunar
+    - Se hace ejercicio de noche o de dia
+
+- intent: Emergencias
+  examples: |
+    - Que pasa si alguien se desmaya
+    - Que hago si alguien sufre un ataque al corazon
+    - Si alguien se ccae y no se levanta que hago
+    - Se golpeo la cabeza y ahora no recuerda nada
+    - Le duele mucho la pierna, no se puede levantar
+
+
+- intent: Atencion_de_urgencias
+  examples: |
+    - Cuanto tiempo esta abierto urgencias?
+    - Servicio de atencion de urgencias
+    - Puedo ir ahora a urgencias?   
+
+- intent: ubicacion_clinica
+  examples: |
+    - Donde esta la clinica?
+    - Dame la dirección del centro medico
+    - Ubicación de la clinica por favor
+    - Como llego a la clinica? 
+    - Donde queda la clinica?
+
+- intent: Corregir_informacion
+  examples: |
+   - Vi que mis datos personales no son correctos, como los cambio
+   - La informacion registrada no es la correcta 
+   - La informacion en perfil no es la mia
+   - Esa no es mi cuenta
+   - Inicio sesion con una cuenta que no es mia
+
+- intent: Video_recomendacion
+  examples:  |
+    - Podrias mandarme un video de recomendacion
+    - video que me sirva para cuidados medicos
+    - No hay un video que me permita saber como debo cuidarme
+    - Pasa video para entender como cuidarme
+    - Por fa video, no entiendo las recomendaciones que me das    
+
+- intent: farmacia_disponible
+  examples: |
+    - Tienen farmacia?
+    - Puedo comprar medicamentos en la clinica?
+    - Servicios de farmacia
+    - Venta de medicamentos
+
+#tenemos 30--->son 30
+#Poner en el action y crear Reglas de las 11 itenciones que faltan
+#AFK

@@ -46,8 +46,42 @@ stories:
   - intent: dar_cedula
   - action: action_ultima_cita
 
+- story: usuario consulta por farmacia y horario
+  steps:
+  - intent: farmacia_disponible
+  - action: utter_farmacia_disponible
+  - intent: Horario_de_atencion
+  - action: utter_Horario_de_atencion
 
+- story: usuario pregunta sobre ejercicios y recibe video
+  steps:
+  - intent: Ejercicios
+  - action: utter_Ejercicios
+  - intent: Video_recomendacion
+  - action: utter_Video_recomendacion
 
+- story: usuario tiene emergencia y pregunta por urgencias
+  steps:
+  - intent: Emergencias
+  - action: utter_Emergencias
+  - intent: Atencion_de_urgencias
+  - action: utter_Atencion_de_urgencias
+
+- story: usuario pregunta ubicación y después farmacia
+  steps:
+  - intent: ubicacion_clinica
+  - action: utter_ubicacion_clinica
+  - intent: farmacia_disponible
+  - action: utter_farmacia_disponible
+
+- story: usuario pregunta primero por incapacidad, luego horario y ubicación
+  steps:
+  - intent: Pedir_incapacidad
+  - action: utter_Pedir_incapacidad
+  - intent: Horario_de_atencion
+  - action: utter_Horario_de_atencion
+  - intent: ubicacion_clinica
+  - action: utter_ubicacion_clinica
 
 - story: obtener ultima cita
   steps:
@@ -59,7 +93,6 @@ stories:
   - action: action_ultima_cita
 
 
-  
 - story: obtener ultima cita 2
   steps:
   - intent: hola
@@ -70,6 +103,7 @@ stories:
   - action: utter_dar_cedula
   - intent: dar_cedula
   - action: action_ultima_cita
+
 
 - story: Presentacion como Bymax
   steps:

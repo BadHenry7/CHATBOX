@@ -8,7 +8,7 @@ rules:
   - action: utter_saludo
 
 
-- rule: Say goodbye anytime the user says goodbye
+- rule: Decir adios cuando el usuario diga adios
   steps:
   - intent: Adios
   - action: utter_despedida
@@ -82,7 +82,7 @@ rules:
   - action: utter_generar_reporte
 
 
-- rule: Say 'Que pedo dijistes ahi cuando no entienda algo
+- rule: decir 'Que pedo dijistes ahi cuando no entienda algo
   steps:
   - intent: iglaturroña
   - action: utter_iglaturroña
@@ -94,9 +94,63 @@ rules:
   - action: utter_repeticion_caracteres
 
 
-
-
 - rule: Manejar consultas fuera de contexto
   steps:
   - intent: out_of_scope
   - action: utter_out_of_scope
+
+#--
+- rule: responder primeros auxilios
+  steps:
+  - intent: Primeros_auxilios
+  - action: utter_Primeros_auxilios
+
+- rule: responder horario de atención
+  steps:
+  - intent: Horario_de_atencion
+  - action: utter_Horario_de_atencion
+
+- rule: responder pedir incapacidad
+  steps:
+  - intent: Pedir_incapacidad
+  - action: utter_Pedir_incapacidad
+
+- rule: responder contacto
+  steps:
+  - intent: Contacto
+  - action: utter_Contacto
+
+- rule: responder ejercicios
+  steps:
+  - intent: Ejercicios
+  - action: utter_Ejercicios
+
+- rule: responder emergencias
+  steps:
+  - intent: Emergencias
+  - action: utter_Emergencias
+
+- rule: responder atención de urgencias
+  steps:
+  - intent: Atencion_de_urgencias
+  - action: utter_Atencion_de_urgencias
+
+- rule: responder ubicación clínica
+  steps:
+  - intent: ubicacion_clinica
+  - action: utter_ubicacion_clinica
+
+- rule: responder corregir información
+  steps:
+  - intent: Corregir_informacion
+  - action: utter_Corregir_informacion
+
+- rule: responder video recomendación
+  steps:
+  - intent: Video_recomendacion
+  - action: utter_Video_recomendacion
+
+- rule: responder farmacia disponible
+  steps:
+  - intent: farmacia_disponible
+  - action: utter_farmacia_disponible
