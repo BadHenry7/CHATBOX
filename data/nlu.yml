@@ -15,7 +15,6 @@ nlu:
   examples: |
     - Chao
     - Te veo luego
-    - Buenas noches
     - Adios
     - Chaito
     - ten un buen dia
@@ -119,13 +118,7 @@ nlu:
     - Quiero una cita con el médico para la próxima semana
     - Reservar una consulta para mañana
 
-- intent: consultar_cita
-  examples: |
-    - ¿Cuándo tengo mi próxima cita?
-    - Quisiera saber la fecha de mi consulta
-    - ¿A qué hora es mi cita médica?
-    - ¿Puedes decirme cuándo tengo cita con el doctor?
-    - ¿Dónde puedo ver mis citas programadas?    
+
 
 
 - intent: sintomas
@@ -147,11 +140,11 @@ nlu:
 
 - intent: descargar_certificado
   examples: |
-    - Quiero descargar mi incapacidad médica
-    - ¿Dónde puedo obtener una incapacidad?
-    - Necesito una incapacidad
+    - Quiero descargar mi certificado médica
+    - ¿Dónde puedo obtener una certificado?
+    - Necesito un certificado
     - ¿Cómo descargo un ana orden medica?
-    - ¿Dónde encuentro mi incapacidad médicos?
+    - ¿Dónde encuentro mi certificado médicos?
 
 
 - intent: generar_reporte
@@ -165,7 +158,7 @@ nlu:
     - ¿Cómo solicito un reporte de mi estado de salud?
 
 
-- intent: ingaturroña
+- intent: iglaturroña
   examples: |
     - asdkjashdkajshd
     - skdjfsdjklfsdkljf
@@ -254,7 +247,7 @@ nlu:
     - Abren los fines de semana?
 
 
-- intent: Pedir incapacidad
+- intent: Pedir_incapacidad
   examples:  |
     - Necesito una incapacidad
     - Como consigo una incapacidad
@@ -324,6 +317,45 @@ nlu:
     - Servicios de farmacia
     - Venta de medicamentos
 
-#tenemos 30--->son 30
-#Poner en el action y crear Reglas de las 11 itenciones que faltan
-#AFK
+#-----------------------------------------------Intenciones de chatbox con MYSQL
+
+- intent: consultar_cita
+  examples: |
+    - ¿Cuándo tengo mi próxima cita?
+    - Quisiera saber la fecha de mi consulta
+    - ¿A qué hora es mi cita médica?
+    - ¿Puedes decirme cuándo tengo cita con el doctor?
+    - ¿Dónde puedo ver mis citas programadas?    
+
+- intent: diagnostico_medico
+  examples: |
+    - ¿Cual fue mi diagnostico de mi ultima cita?
+    - Quisiera saber mi diagnostico
+    - Podria ver el diagnostico del medico
+    - ¿Puedes decirme que me diagnostico el medico
+    - Dónde puedo saber mi diagnostico dado por el medico?    
+
+- intent: recomendaciones_medica
+  examples: |
+    - ¿Que me recomienda el medico?
+    - ¿Cuál es el consejo del doctor?
+    - ¿Tienes alguna recomendación médica para mí?
+    - ¿Qué cuidados debo seguir según el médico?
+    - ¿Qué tratamiento me sugiere el doctor?
+    
+
+- intent: sintomas_medica
+  examples: |
+    - ¿Cual fue el sintoma de mi consulta?
+    - ¿Qué síntomas tuve en mi última cita?
+    - ¿Cuáles fueron los síntomas registrados en mi consulta?
+    - ¿Qué síntomas mencioné en mi cita médica?
+    - ¿Qué síntomas tengo según mi historial?
+
+- intent: ubicacion_salas_cita
+  examples: |
+    - ¿En que hospital y sala es mi proxima cita?
+    - ¿Dónde será mi próxima consulta médica?
+    - ¿En qué sala tengo mi cita programada?
+    - ¿Cuál es la ubicación de mi próxima cita médica?
+    - ¿En qué hospital debo presentarme para mi cita?

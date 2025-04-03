@@ -10,7 +10,6 @@ intents:
   - mood_unhappy
   - bot_challenge
   - agendar_cita
-  - consultar_cita
   - sintomas
   - informacion_hospital
   - descargar_certificado
@@ -31,32 +30,19 @@ intents:
   - Corregir_informacion
   - Video_recomendacion
   - farmacia_disponible
+  - consultar_cita
+  - diagnostico_medico
+  - recomendaciones_medica
+  - sintomas_medica
+  - ubicacion_salas_cita
 
 
 actions: #Solo van las del archivo action.py(en teoria)
     - action_ultima_cita
-  # - utter_saludo
-  # - utter_despedida
-  # - utter_afirmativo
-  # - utter_negativo
-  # - utter_agradecimiento
-  # - utter_feliz
-  # - utter_triste
-  # - utter_iamabot
-  # - utter_agendar_cita
-  # - utter_consultar_cita
-  # - utter_consultar_sintomas
-  # - utter_informacion_hospital
-  # - utter_descargar_certificado
-  # - utter_generar_reporte
-  # - utter_iglaturroña 
-  # - utter_repeticion_caracteres
-  # - utter_out_of_scope
-  # - utter_did_that_help
-  # - utter_ultima_cita
-  # - utter_Hola_B
-  # - utter_Hola_B2
-  # - utter_Hola_B3
+    - action_diagnosticos_chatbox
+    - action_recomendaciones_chatbox
+    - action_sintomas_chatbox
+    - action_ubicacion_chatbox
 
 entities:
   - cedula
@@ -128,9 +114,6 @@ responses:
   utter_did_that_help:
     - text: "Eso te ayuda?"  
 
- 
-  utter_ultima_cita:
-   - text: "Tu última cita fue el {fecha} con el doctor {doctor}."
 
   utter_dar_cedula:
     - text: "Hola, me podrias indicar el numero de tu documento de identidad 😄"
@@ -177,6 +160,23 @@ responses:
 
   utter_farmacia_disponible:
     - text: "Contamos con farmacia en frente de la clínica, abierta de lunes a sábado en horario de atención habitual, de lunes a viernes 7 am a 8 pm y sábados de 8 am a 12 pm"
+
+
+#--------------------------Utter con MYSQL
+  utter_ultima_cita:
+    - text: "Tu última cita fue el {fecha} con el doctor {doctor}."
+  
+  utter_diagnosticos_chatbox:
+    - text: "Tu diagnostico fue: {resultado}, ademas el doctor realizo la siguiente descripcion: {descripcion}."
+
+  utter_recomendaciones_chatbox:
+    - text: "El medico te recomendo lo siguiente:  {observacion} "
+
+  utter_sintomas_chatbox:
+    - text: "En tu ultima cita el sintoma que tenias fue {nombre}, ademas realizo la siguiente descripcion: {descripcion}."
+
+  utter_ubicacion_chatbox:
+    - text: "Tu cita es en el hospital: {ubicacion} en la sala: {salas}."
 
     
 session_config:

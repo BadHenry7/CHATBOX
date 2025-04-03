@@ -39,12 +39,8 @@ stories:
   - action: utter_out_of_scope
 
 
-- story: consultar cita directo
-  steps:
-  - intent: consultar_cita
-  - action: utter_dar_cedula
-  - intent: dar_cedula
-  - action: action_ultima_cita
+
+
 
 - story: usuario consulta por farmacia y horario
   steps:
@@ -83,27 +79,6 @@ stories:
   - intent: ubicacion_clinica
   - action: utter_ubicacion_clinica
 
-- story: obtener ultima cita
-  steps:
-  - intent: hola
-  - action: utter_saludo
-  - intent: consultar_cita
-  - action: utter_dar_cedula
-  - intent: dar_cedula
-  - action: action_ultima_cita
-
-
-- story: obtener ultima cita 2
-  steps:
-  - intent: hola
-  - action: utter_saludo
-  - intent: mood_great
-  - action: utter_feliz
-  - intent: consultar_cita
-  - action: utter_dar_cedula
-  - intent: dar_cedula
-  - action: action_ultima_cita
-
 
 - story: Presentacion como Bymax
   steps:
@@ -113,5 +88,197 @@ stories:
   - action: utter_Hola_B3
  
 
+
+
+
+- story: consultar cita con cédula ya registrada
+  steps:
+  - slot_was_set:
+      - cedula
+  - intent: consultar_cita
+  - action: action_ultima_cita
+
+- story: consultar diagnostico con cédula ya registrada
+  steps:
+  - slot_was_set:
+      - cedula
+  - intent: diagnostico_medico
+  - action: action_diagnosticos_chatbox
+
+- story: consultar recomendaciones con cédula ya registrada
+  steps:
+  - slot_was_set:
+      - cedula
+  - intent: recomendaciones_medica
+  - action: action_recomendaciones_chatbox
+
+- story: consultar sintomas con cédula ya registrada
+  steps:
+  - slot_was_set:
+      - cedula
+  - intent: sintomas_medica
+  - action: action_sintomas_chatbox
+
+- story: consultar ubicacion y sala con cédula ya registrada
+  steps:
+  - slot_was_set:
+      - cedula
+  - intent: ubicacion_salas_cita
+  - action: action_ubicacion_chatbox
+
+
+
+
+- story: consultar cita si no hay cédula
+  steps:
+  - intent: consultar_cita
+  - slot_was_set:
+      - cedula: null
+  - action: utter_dar_cedula
+  - intent: dar_cedula
+  - action: action_ultima_cita
+
+- story: consultar cita si ya hay cédula
+  steps:
+  - slot_was_set:
+      - cedula
+  - intent: consultar_cita
+  - action: action_ultima_cita
+
+- story: consultar diagnostico si no hay cédula
+  steps:
+  - intent: diagnostico_medico
+  - slot_was_set:
+      - cedula: null
+  - action: utter_dar_cedula
+  - intent: dar_cedula
+  - action: action_diagnosticos_chatbox
+
+- story: consultar diagnostico si ya hay cédula
+  steps:
+  - slot_was_set:
+      - cedula
+  - intent: diagnostico_medico
+  - action: action_diagnosticos_chatbox
+
+- story: consultar recomendaciones si no hay cédula
+  steps:
+  - intent: recomendaciones_medica
+  - slot_was_set:
+      - cedula: null
+  - action: utter_dar_cedula
+  - intent: dar_cedula
+  - action: action_recomendaciones_chatbox
+
+- story: consultar recomendaciones si ya hay cédula
+  steps:
+  - slot_was_set:
+      - cedula
+  - intent: recomendaciones_medica
+  - action: action_recomendaciones_chatbox
+
+- story: consultar sintomas si no hay cédula
+  steps:
+  - intent: sintomas_medica
+  - slot_was_set:
+      - cedula: null
+  - action: utter_dar_cedula
+  - intent: dar_cedula
+  - action: action_sintomas_chatbox
+
+- story: consultar sintomas si ya hay cédula
+  steps:
+  - slot_was_set:
+      - cedula
+  - intent: sintomas_medica
+  - action: action_sintomas_chatbox
+
+- story: consultar ubicación y sala si no hay cédula
+  steps:
+  - intent: ubicacion_salas_cita
+  - slot_was_set:
+      - cedula: null
+  - action: utter_dar_cedula
+  - intent: dar_cedula
+  - action: action_ubicacion_chatbox
+
+- story: consultar ubicación y sala si ya hay cédula
+  steps:
+  - slot_was_set:
+      - cedula
+  - intent: ubicacion_salas_cita
+  - action: action_ubicacion_chatbox
+
+
+
+
+
+# - story: consultar cita directo
+#   steps:
+#   - intent: consultar_cita
+#   - slot_was_set:
+#       - cedula: null
+#   - action: utter_dar_cedula
+#   - intent: dar_cedula
+#   - action: action_ultima_cita
+
+#--------------------------------Story Chatbox
+# - story: consultar cita sin pedir cedula
+#   steps:
+#   - intent: consultar_cita
+#   - slot_was_set:
+#       - cedula  
+#   - action: action_ultima_cita
+
+# - story: consultar diagnostico
+#   steps:
+#   - intent: diagnostico_medico
+#   - slot_was_set:
+#       - cedula  
+#   - action: action_diagnosticos_chatbox
+
+# - story: consultar recomendaciones
+#   steps:
+#   - intent: recomendaciones_medica
+#   - slot_was_set:
+#       - cedula  
+#   - action: action_recomendaciones_chatbox
+
+# - story: consultar sintomas
+#   steps:
+#   - intent: sintomas_medica
+#   - slot_was_set:
+#       - cedula  
+#   - action: action_sintomas_chatbox
+
+# - story: consultar ubicacion y sala
+#   steps:
+#   - intent: ubicacion_salas_cita
+#   - slot_was_set:
+#       - cedula  
+#   - action: action_ubicacion_chatbox
+
+
+
+# - story: obtener ultima cita
+#   steps:
+#   - intent: hola
+#   - action: utter_saludo
+#   - intent: consultar_cita
+#   - action: utter_dar_cedula
+#   - intent: dar_cedula
+#   - action: action_ultima_cita
+
+
+# - story: obtener ultima cita 2
+#   steps:
+#   - intent: hola
+#   - action: utter_saludo
+#   - intent: mood_great
+#   - action: utter_feliz
+#   - intent: consultar_cita
+#   - action: utter_dar_cedula
+#   - intent: dar_cedula
+#   - action: action_ultima_cita
 
   
