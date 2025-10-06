@@ -3,45 +3,95 @@ version: "3.1"
 nlu:
 - intent: hola
   examples: |
-    - hey
     - hola
-    - hola tu
-    - Dias
-    - Que cuentas
-    - hey tu
-    - Hey tio
+    - hola, ¿cómo estás?
+    - hey
+    - hey tú
+    - qué tal
+    - buenos días
+    - buenas tardes
+    - buenas noches
+    - hola, qué cuentas
+    - qué más
+    - ey, ¿todo bien?
+    - qué onda
+    - holaaa
+    - hola amigo
+    - hey, qué pasa
+    - qué hubo
+    - qué tal todo
+    - hola, cómo va tu día
+    - buen día
+    - hola tío
 
 - intent: Adios
   examples: |
-    - Chao
-    - Te veo luego
-    - Adios
-    - Chaito
-    - ten un buen dia
-    - Hablamos luego
-    - Hablamos despues
-    - Chao
-    - Bye
+    - adiós
+    - chao
+    - chau
+    - nos vemos
+    - hasta luego
+    - hablamos después
+    - hablamos luego
+    - te veo luego
+    - cuídate
+    - nos hablamos
+    - bye
+    - bye bye
+    - hasta pronto
+    - hasta la próxima
+    - que tengas un buen día
+    - que estés bien
+    - chaito
+    - nos vemos más tarde
+    - bueno, me despido
+    - me tengo que ir
 
 - intent: Si
   examples: |
-    - Si
-    - S
-    - De acuerdo
-    - Cuenta conmigo
-    - Por supuesto
-    - Suena bien
+    - sí
+    - si
+    - s
+    - claro
+    - por supuesto
+    - de acuerdo
+    - exacto
     - correcto
+    - obviamente
+    - claro que sí
+    - sin duda
+    - totalmente
+    - cuenta conmigo
+    - suena bien
+    - me parece bien
+    - así es
+    - afirmativo
+    - vale
+    - ok
+    - está bien
 
 - intent: No
   examples: |
-    - No
+    - no
     - n
-    - Nunca
-    - Yo no creo eso
-    - No me gusta eso
-    - No creo
-    - No realmente
+    - nunca
+    - para nada
+    - no creo
+    - no lo creo
+    - no me gusta eso
+    - yo no creo eso
+    - no realmente
+    - en absoluto
+    - no, gracias
+    - ni de broma
+    - no pienso eso
+    - no quiero
+    - no estoy de acuerdo
+    - no por ahora
+    - no lo haré
+    - no es cierto
+    - no tengo interés
+    - no me convence
 
 
 - intent: agradecimiento
@@ -54,6 +104,18 @@ nlu:
     - gracias por tu ayuda
     - se agradece
     - aprecio tu ayuda
+    - gracias por todo
+    - muchas gracias por responder
+    - te agradezco mucho
+    - muy agradecido
+    - infinitas gracias
+    - gracias por la información
+    - gracias, de verdad
+    - te debo una
+    - lo aprecio bastante
+    - gracias por tu tiempo
+    - super gracias
+    - gracias 😊
 
 
 
@@ -62,17 +124,23 @@ nlu:
     - perfecto
     - genial
     - increíble
-    - me siento como un rey
     - maravilloso
+    - excelente
+    - me siento como un rey
     - me siento muy bien
     - estoy genial
     - soy increíble
-    - voy a salvar el mundo
     - súper emocionado
     - extremadamente bien
     - tan, tan perfecto
     - tan bien
     - tan perfecto
+    - todo va genial
+    - me siento feliz
+    - hoy me va de maravilla
+    - estoy súper contento
+    - no podría estar mejor
+    - estoy de lo mejor 😄
 
 - intent: mood_unhappy
   examples: |
@@ -91,6 +159,11 @@ nlu:
     - extremadamente triste
     - tan triiiste
     - tan triste
+    - me siento mal
+    - hoy fue un mal día
+    - no tengo ánimos
+    - me siento frustrado
+    - estoy desanimado
 
 - intent: bot_challenge
   examples: |
@@ -98,53 +171,120 @@ nlu:
     - ¿eres un humano?
     - ¿estoy hablando con un bot?
     - ¿estoy hablando con un humano?
-    - ¿Qué puedes hacer?
-    - ¿Para qué sirves?
-    - ¿Cómo me puedes ayudar?
-    - ¿Cuáles son tus funciones?
-    - ¿Qué tipo de información manejas?
-    - ¿Quién te creó?
-    - ¿Eres un bot inteligente?
-
+    - ¿qué puedes hacer?
+    - ¿para qué sirves?
+    - ¿cómo me puedes ayudar?
+    - ¿cuáles son tus funciones?
+    - ¿qué tipo de información manejas?
+    - ¿quién te creó?
+    - ¿eres un bot inteligente?
+    - ¿tienes emociones?
+    - ¿eres real?
+    - ¿eres una inteligencia artificial?
+    - ¿tienes nombre?
+    - dime quién eres
+    - ¿puedes pensar?
+    - ¿trabajas con humanos?
+    - ¿eres un programa?
+    - ¿cómo funcionas?
 
 
 - intent: agendar_cita
   examples: |
-    - Quiero agendar una cita médica
-    - Necesito pedir una consulta
-    - ¿Puedes ayudarme a reservar una cita?
-    - Quiero programar una consulta con el doctor
-    - ¿Cómo agendo una cita?
-    - Quiero una cita con el médico para la próxima semana
-    - Reservar una consulta para mañana
+    - quiero agendar una cita médica
+    - necesito pedir una consulta
+    - ¿puedes ayudarme a reservar una cita?
+    - quiero programar una consulta con el doctor
+    - ¿cómo agendo una cita?
+    - quiero una cita con el médico para la próxima semana
+    - reservar una consulta para mañana
+    - deseo agendar una cita médica
+    - necesito una cita con el doctor
+    - quiero sacar una cita
+    - quiero pedir una cita
+    - me gustaría reservar una cita
+    - quiero hablar con un médico
+    - quiero una cita hoy mismo
+    - ¿me puedes ayudar a sacar una cita?
+    - quiero agendar una cita lo antes posible
+    - quiero programar una consulta médica
+    - necesito agendar una cita de revisión
+    - quiero reservar una cita médica
+    - ¿cómo puedo sacar una cita con el doctor?
 
 
 
 
 - intent: sintomas
   examples: |
-    - Tengo fiebre y dolor de cabeza, ¿qué hago?
-    - Me duele mucho el estómago, ¿qué puede ser?
-    - He estado tosiendo bastante, ¿es grave?
-    - Siento mareos y náuseas
-    - ¿Qué significa si tengo dolor en el pecho?
-    - Me duele la garganta y tengo fiebre   
+    - tengo fiebre y dolor de cabeza, ¿qué hago?
+    - me duele mucho el estómago, ¿qué puede ser?
+    - he estado tosiendo bastante, ¿es grave?
+    - siento mareos y náuseas
+    - ¿qué significa si tengo dolor en el pecho?
+    - me duele la garganta y tengo fiebre
+    - tengo dolor muscular y cansancio
+    - me siento débil y con escalofríos
+    - tengo dolor en el cuerpo
+    - me pica la garganta y estoy tosiendo
+    - tengo dolor de cabeza constante
+    - tengo fiebre desde ayer
+    - me siento mal, con náuseas y dolor de cabeza
+    - tengo tos seca y malestar general
+    - me arde el estómago
+    - tengo el cuerpo cortado
+    - me duele el pecho al respirar
+    - siento presión en la cabeza
+    - tengo dolor en la espalda baja
+    - tengo fiebre alta y me siento muy mal
 
 
 - intent: informacion_hospital
   examples: |
-    - ¿Dónde está el hospital más cercano?
-    - ¿Cuáles son los horarios de atención del centro médico?
-    - ¿Cuál es la dirección del hospital?
+    - ¿dónde está el hospital más cercano?
+    - ¿cuáles son los horarios de atención del centro médico?
+    - ¿cuál es la dirección del hospital?
     - ubicaciones
+    - ¿dónde queda el hospital?
+    - necesito la dirección del hospital
+    - ¿cómo llego al hospital?
+    - ¿en qué parte está la clínica?
+    - quiero saber dónde está el centro médico
+    - ¿qué horarios manejan?
+    - dame la ubicación del hospital
+    - ¿a qué horas abren?
+    - ¿a qué horas cierran?
+    - ¿cuál es el horario de atención?
+    - ubicación del hospital
+    - necesito saber dónde están ubicados
+    - ¿dónde queda el centro médico?
+    - dirección del hospital, por favor
+    - ¿cuál es la ubicación del hospital principal?
+    - ¿tienen varios centros médicos?
 
 - intent: descargar_certificado
   examples: |
-    - Quiero descargar mi certificado médica
-    - ¿Dónde puedo obtener una certificado?
-    - Necesito un certificado
+    - quiero descargar mi certificado médico
+    - ¿dónde puedo obtener un certificado?
+    - necesito un certificado médico
+    - ¿cómo descargo una orden médica?
+    - ¿dónde encuentro mi certificado médico?
+    - deseo descargar mi certificado
+    - quiero obtener mi constancia médica
+    - necesito bajar mi certificado
+    - ¿cómo puedo ver mi certificado?
+    - ¿dónde puedo descargar la orden médica?
+    - quiero mi certificado en formato PDF
+    - necesito descargar el certificado de mi cita
+    - ¿me puedes ayudar a obtener mi certificado?
+    - quiero el certificado de mi consulta
+    - deseo bajar mi certificado médico
+    - ¿cómo obtengo mi certificado digital?
+    - ¿dónde puedo imprimir mi certificado?
+    - necesito el comprobante de mi cita médica
+    - ¿cómo puedo acceder a mi certificado?
+    - quiero descargar mi orden de resultados
     - ¿Cómo descargo un ana orden medica?
-    - ¿Dónde encuentro mi certificado médicos?
 
 
 - intent: generar_reporte
@@ -156,6 +296,19 @@ nlu:
     - ¿Me puedes enviar un resumen de mis visitas médicas?
     - Quisiera un informe de mis exámenes médicos
     - ¿Cómo solicito un reporte de mi estado de salud?
+    - Quiero ver mi historial
+    - Necesito un resumen de mis resultados médicos
+    - ¿Dónde puedo ver mis diagnósticos anteriores?
+    - Muéstrame mi reporte de salud
+    - ¿Podrías darme un informe de mis tratamientos?
+    - Deseo revisar mis resultados de laboratorio
+    - Quiero obtener un documento con mis citas médicas
+    - ¿Cómo puedo imprimir mi historial médico?
+    - Envíame el reporte de mis consultas pasadas
+    - Necesito un archivo con mis antecedentes médicos
+    - ¿Puedo descargar mi historial de atenciones médicas?
+    - Muestra mi resumen completo
+    - Genera un informe detallado de mi salud
 
 
 - intent: iglaturroña
@@ -170,24 +323,40 @@ nlu:
     - oiqweoiqweoiqwe
     - zxczxczxczxcxzxc
     - mnbmnbmnbmnbmnb
+    - ajskdjaslkdjalksdj
+    - lorem ipsum dolor sit amet
+    - bleblebleble
+    - fghfghfghfgh
+    - blah blah blah
+    - texto sin sentido
+    - palabra aleatoria
+    - jhsdjhsdjhsdjh
+    - xxxxxxxx
+    - random random random
 
 - intent: repeticion_caracteres
   examples: |
     - kkkkkkkkkk
     - jajajajaja
-    - lololololo
-    - asdasdasdasd
+    - jajajaja
+    - jejejejeje
+    - jeje
     - hehehehehe
     - hohohohoho
     - hihihihihi
-    - jejejejejeje
     - xdxdxdxdxd
+    - xdddddd
+    - lololololo
+    - asdasdasdasd
     - qwqwqwqwqwq
     - mmmmmmmmmmmmm
     - nnnnnnnn
     - qqqqqqq
     - wwwwwwww
     - tttttttt
+    - ajajajajajaj
+    - jaja
+    - hahahaha
 
 
 - intent: out_of_scope
@@ -202,6 +371,16 @@ nlu:
     - ¿Cómo invierto en criptomonedas?
     - ¿Quién es el mejor futbolista del mundo?
     - Dime un dato curioso
+    - ¿Puedes ayudarme con mis tareas?
+    - ¿Qué hora es?
+    - ¿Cuál es el clima en Bogotá?
+    - Enséñame a programar
+    - ¿Cuántos años tienes?
+    - ¿Qué piensas de los aliens?
+    - Cuéntame una historia
+    - ¿Dónde puedo comprar ropa barata?
+    - ¿Cuál es tu película favorita?
+    - ¿Puedes cantar una canción?
 
 - intent: dar_cedula
   examples: |
@@ -216,106 +395,293 @@ nlu:
     - es [55667788](cedula)
     - el número es [66778899](cedula)
     - cédula número [10111213](cedula)
+    - te dejo mi cédula [20212223](cedula)
+    - aquí va mi documento [88990011](cedula)
+    - [11224455](cedula)
+    - mi documento es [77885544](cedula)
+    - anota el número [66554433](cedula)
+    - cédula de ciudadanía [10020030](cedula)
+    - documento de identidad [55443322](cedula)
+    - te comparto mi número de cédula [77788899](cedula)
+    
 
 - intent: hola_presentacion
   examples: |
     - Hola XD
     - Hola beymax
-    - Buenos dias
+    - Buenos días
     - Buenas tardes
     - Buenas noches
+    - Hola amigo
+    - Hola doctor
+    - Hola robot blanco
+    - Hola asistente
+    - Hey beymax
+    - Buen día
+    - Hola, ¿cómo estás?
+    - Hola, ¿me puedes ayudar?
+    - Hola, soy yo otra vez
+    - Hola, ¿quién eres?
+    - Hola, encantado de hablar contigo
+    - Buenas, beymax
+    - Hola mi robot favorito
+    - Hola máquina amable
+    - Ey beymax, ¿cómo va todo?
 #//////////////////////////////////////////////////////////////////////////
 - intent: Primeros_auxilios
   examples: |
-    - Cuales son los primeros auxilios?
-    - Que recomendaciones me da para los primeros auxilios?
-    - Como aplico primeros auxilios?
-    - Auxilios basicos  
-    - Que hago si alguien se desmaya?
+    - ¿Cuáles son los primeros auxilios?
+    - ¿Qué recomendaciones me da para los primeros auxilios?
+    - ¿Cómo aplico primeros auxilios?
+    - Auxilios básicos
+    - ¿Qué hago si alguien se desmaya?
     - Recomendaciones de primeros auxilios
+    - ¿Qué son los primeros auxilios?
+    - ¿Cómo debo actuar en una emergencia?
+    - ¿Qué hago si alguien se corta?
+    - ¿Qué hago si una persona sangra mucho?
+    - ¿Qué hacer en caso de quemadura?
+    - ¿Cómo se atiende una herida leve?
+    - ¿Qué debo hacer si alguien se atraganta?
+    - ¿Cómo ayudar a alguien que no respira?
+    - ¿Qué pasos sigo para dar RCP?
+    - ¿Qué hago si alguien se golpea la cabeza?
+    - Explícame los primeros auxilios básicos
+    - ¿Qué medidas de emergencia debo conocer?
+    - ¿Cómo puedo aprender primeros auxilios?
+    - Dime qué hacer en una situación de emergencia
 
 - intent: Horario_de_atencion
   examples: |
-    - A que hora atienden?
-    - Cuando abren?
-    - A que hora abren?
-    - Cual es su horario de atencion?
-    - A que hora puedo llegar al hospital?
+   - ¿A qué hora atienden?
+    - ¿Cuándo abren?
+    - ¿A qué hora abren?
+    - ¿Cuál es su horario de atención?
+    - ¿A qué hora puedo llegar al hospital?
     - Hora de entrada
-    - A que hora cierran?
-    - Hasta cuando esta abierto?
-    - Abren los fines de semana?
+    - ¿A qué hora cierran?
+    - ¿Hasta cuándo está abierto?
+    - ¿Abren los fines de semana?
+    - ¿Atienden los domingos?
+    - ¿Tienen horario nocturno?
+    - ¿A qué hora empieza la atención médica?
+    - ¿Hasta qué hora hay doctores disponibles?
+    - ¿Cuáles son los días de atención?
+    - ¿Puedo ir en la tarde?
+    - ¿Atienden en la mañana?
+    - ¿A qué hora dejan de atender?
+    - ¿El hospital está abierto las 24 horas?
+    - ¿Cuál es el horario de consultas?
+    - ¿Qué horario tienen los sábados?
 
 
 - intent: Pedir_incapacidad
   examples:  |
     - Necesito una incapacidad
-    - Como consigo una incapacidad
-    - Donde descargo una incapacidad
-    - Se puede tener una incapacidad
-    - Descargame una incapadidad por favor
+    - ¿Cómo consigo una incapacidad?
+    - ¿Dónde descargo una incapacidad?
+    - ¿Se puede tener una incapacidad?
+    - Descárgame una incapacidad, por favor
+    - Quiero pedir una incapacidad médica
+    - Necesito que me den una incapacidad
+    - ¿Puedo solicitar una incapacidad?
+    - ¿Cómo tramito una incapacidad?
+    - Me enfermé y necesito una incapacidad
+    - Quiero un documento de incapacidad
+    - ¿Podrías generarme una incapacidad médica?
+    - Solicitar incapacidad médica
+    - ¿Dónde puedo bajar mi incapacidad?
+    - Ayúdame a obtener mi incapacidad
+    - Necesito justificar mi ausencia con una incapacidad
+    - ¿Cómo obtengo una incapacidad por enfermedad?
+    - Requiero una incapacidad laboral
+    - Deseo descargar mi certificado de incapacidad
+    - Dime cómo sacar una incapacidad médica
+
 
 - intent: Contacto
   examples: |
-    - A donde puedo llamar?
-    - A donde puedo escribir?
-    - Tienen algun numero telefonico?
-    - Tienen algun numero de telefono?
-    - Como puedo llamar a la clinica?
+    - ¿A dónde puedo llamar?
+    - ¿A dónde puedo escribir?
+    - ¿Tienen algún número telefónico?
+    - ¿Tienen algún número de teléfono?
+    - ¿Cómo puedo llamar a la clínica?
+    - ¿Cuál es su número de contacto?
+    - ¿Dónde puedo comunicarme con ustedes?
+    - Necesito un número para llamar
+    - ¿Tienen un correo electrónico de contacto?
+    - ¿Puedo comunicarme por WhatsApp?
+    - ¿Cómo contacto a un médico?
+    - ¿Cuál es el teléfono del hospital?
+    - ¿Me puedes dar el número de contacto?
+    - ¿Dónde encuentro los datos de contacto?
+    - Necesito hablar con alguien de la clínica
+    - ¿Cómo puedo comunicarme con el centro médico?
+    - ¿Tienen línea de atención al cliente?
+    - ¿Cuál es su correo para consultas?
+    - ¿A quién puedo llamar en caso de duda?
+    - Necesito un número de emergencia del hospital
 
   
 - intent: Ejercicios
   examples: |
-    - Cuanto ejercicio debo hacer a la semana
-    - El ejercicio se hace diario?
-    - Se hace ejercicio despues de desayunar
-    - Se hace ejercicio de noche o de dia
+    - ¿Cuánto ejercicio debo hacer a la semana?
+    - ¿El ejercicio se hace diario?
+    - ¿Se hace ejercicio después de desayunar?
+    - ¿Se hace ejercicio de noche o de día?
+    - ¿Cuántos minutos debo ejercitarme al día?
+    - ¿Qué tipo de ejercicio es mejor para la salud?
+    - ¿Es bueno hacer ejercicio por la mañana?
+    - ¿Puedo hacer ejercicio antes de dormir?
+    - ¿Cuánto tiempo debo caminar cada día?
+    - ¿Cuántos días a la semana debo entrenar?
+    - ¿Es recomendable correr todos los días?
+    - ¿Se puede combinar cardio con pesas?
+    - ¿Cuánto ejercicio debo hacer si soy principiante?
+    - ¿Es necesario calentar antes de hacer ejercicio?
+    - ¿Hacer ejercicio en ayunas es saludable?
+    - ¿Puedo hacer ejercicio después de comer?
+    - ¿Cuál es la mejor hora para hacer ejercicio?
+    - ¿Debo hacer estiramientos todos los días?
+    - ¿Qué ejercicios son recomendables para la espalda?
+    - ¿Cuánto ejercicio es suficiente para mantenerse sano?
 
 - intent: Emergencias
   examples: |
-    - Que pasa si alguien se desmaya
-    - Que hago si alguien sufre un ataque al corazon
-    - Si alguien se ccae y no se levanta que hago
-    - Se golpeo la cabeza y ahora no recuerda nada
+    - ¿Qué pasa si alguien se desmaya?
+    - ¿Qué hago si alguien sufre un ataque al corazón?
+    - Si alguien se cae y no se levanta, ¿qué hago?
+    - Se golpeó la cabeza y ahora no recuerda nada
     - Le duele mucho la pierna, no se puede levantar
+    - ¿Cómo actuar si alguien tiene dificultad para respirar?
+    - ¿Qué hacer ante una quemadura grave?
+    - Si alguien sangra mucho, ¿qué hago?
+    - ¿Qué hago si alguien tiene convulsiones?
+    - Si alguien se atraganta, ¿cómo lo ayudo?
+    - Alguien se cortó profundo, ¿qué debo hacer?
+    - ¿Qué hago si alguien tiene un accidente de tráfico?
+    - Si alguien está inconsciente, ¿qué hago?
+    - ¿Cómo ayudar a alguien con dolor en el pecho?
+    - ¿Qué hacer si alguien se rompe un brazo?
+    - Si alguien pierde el conocimiento, ¿cómo reacciono?
+    - ¿Cómo aplicar primeros auxilios en casa?
+    - ¿Qué hago si hay un accidente doméstico?
+    - ¿Qué medidas tomar si alguien tiene fiebre alta y convulsiona?
+    - Si alguien está sangrando por la cabeza, ¿qué debo hacer?
 
 
 - intent: Atencion_de_urgencias
   examples: |
-    - Cuanto tiempo esta abierto urgencias?
-    - Servicio de atencion de urgencias
-    - Puedo ir ahora a urgencias?   
+    - ¿Está abierto el servicio de urgencias?
+    - ¿Qué horario tiene urgencias?
+    - ¿Atienden en urgencias todo el día?
+    - ¿Puedo acudir a urgencias en este momento?
+    - ¿Urgencias funciona los fines de semana?
+    - ¿Qué horas de atención tiene urgencias?
+    - ¿Atienden urgencias por la noche?
+    - ¿El servicio de urgencias está disponible ahora?
+    - ¿Cuándo abre urgencias?
+    - ¿Cuándo cierran urgencias?
+    - ¿Se puede ir a urgencias sin cita?
+    - ¿Atienden urgencias los días festivos?
+    - Necesito atención inmediata en urgencias
+    - ¿Dónde está la entrada de urgencias?
+    - ¿Puedo recibir atención de urgencias en cualquier momento?
+    - ¿Urgencias atiende casos graves sin cita?
+    - ¿Cuál es el horario de urgencias hoy?
+
 
 - intent: ubicacion_clinica
   examples: |
-    - Donde esta la clinica?
-    - Dame la dirección del centro medico
-    - Ubicación de la clinica por favor
-    - Como llego a la clinica? 
-    - Donde queda la clinica?
+    - ¿Dónde está la clínica?
+    - Dame la dirección del centro médico
+    - Ubicación de la clínica, por favor
+    - ¿Cómo llego a la clínica?
+    - ¿Dónde queda la clínica?
+    - ¿Cuál es la dirección del hospital?
+    - ¿Me puedes dar la ubicación de la clínica?
+    - ¿Dónde se encuentra el centro médico?
+    - ¿Cómo puedo llegar al hospital?
+    - ¿Dónde está situado el hospital?
+    - ¿Me indicas la ubicación del centro médico?
+    - ¿Cuál es la dirección exacta de la clínica?
+    - ¿Dónde queda el hospital más cercano?
+    - Necesito la ubicación de la clínica
+    - ¿Dónde se ubica la clínica?
+    - ¿Me das la dirección del hospital?
+    - ¿Dónde encuentro la clínica?
+    - ¿Cómo puedo llegar a la clínica desde aquí?
+    - ¿Cuál es la dirección para ir al centro médico?
+    - Indícame la ubicación del hospital
 
 - intent: Corregir_informacion
   examples: |
-   - Vi que mis datos personales no son correctos, como los cambio
-   - La informacion registrada no es la correcta 
-   - La informacion en perfil no es la mia
-   - Esa no es mi cuenta
-   - Inicio sesion con una cuenta que no es mia
+    - Vi que mis datos personales no son correctos, ¿cómo los cambio?
+    - La información registrada no es la correcta
+    - La información en mi perfil no es la mía
+    - Esa no es mi cuenta
+    - Inicio sesión con una cuenta que no es mía
+    - Necesito actualizar mis datos personales
+    - Mis datos están incorrectos, ¿cómo los corrijo?
+    - Mi perfil tiene información errónea
+    - La información de contacto no es correcta
+    - Quiero corregir mi número de teléfono
+    - Mi nombre está mal registrado
+    - Mi dirección está equivocada
+    - Mi correo electrónico es incorrecto
+    - Hay un error en mi perfil
+    - Los datos de mi cuenta no coinciden
+    - Necesito actualizar mi información personal
+    - La cuenta que estoy usando no es la mía
+    - Me equivoqué al registrar mi información
+    - Quiero corregir los datos de mi perfil
+    - Mis datos no coinciden con los del sistema
 
 - intent: Video_recomendacion
   examples:  |
-    - Podrias mandarme un video de recomendacion
-    - video que me sirva para cuidados medicos
-    - No hay un video que me permita saber como debo cuidarme
-    - Pasa video para entender como cuidarme
-    - Por fa video, no entiendo las recomendaciones que me das    
+    - Podrías mandarme un video de recomendación
+    - Video que me sirva para cuidados médicos
+    - No hay un video que me permita saber cómo debo cuidarme
+    - Pasa video para entender cómo cuidarme
+    - Por fa, video, no entiendo las recomendaciones que me das
+    - Me podrías enviar un video de cuidados médicos
+    - Quiero un video explicativo sobre cuidados de salud
+    - Necesito un video que me enseñe a cuidarme
+    - ¿Tienes un video con recomendaciones médicas?
+    - Quisiera un video sobre prevención de enfermedades
+    - Mándame un video sobre higiene y cuidado personal
+    - Video tutorial de cuidado médico, por favor
+    - Video que explique cómo seguir las indicaciones médicas
+    - ¿Me puedes enviar un video con instrucciones de salud?
+    - Video sobre cuidados después de una consulta
+    - Recomendaciones médicas en video, por favor
+    - Video educativo sobre hábitos saludables
+    - Video con consejos médicos para mi situación
+    - Necesito un video que me muestre cómo aplicar cuidados
+    - Video informativo de salud para pacientes   
 
 - intent: farmacia_disponible
   examples: |
-    - Tienen farmacia?
-    - Puedo comprar medicamentos en la clinica?
+    - ¿Tienen farmacia?
+    - ¿Puedo comprar medicamentos en la clínica?
     - Servicios de farmacia
     - Venta de medicamentos
+    - ¿Hay farmacia dentro del hospital?
+    - ¿Dónde puedo conseguir medicinas en la clínica?
+    - ¿Atienden la farmacia los fines de semana?
+    - ¿Puedo adquirir medicamentos aquí?
+    - ¿La clínica tiene botiquín o farmacia?
+    - ¿Dónde se venden los medicamentos?
+    - ¿Puedo ir a la farmacia del hospital?
+    - ¿Cuál es el horario de la farmacia?
+    - ¿Qué medicamentos tienen disponibles?
+    - ¿La farmacia está abierta ahora?
+    - ¿Se puede comprar medicinas sin receta?
+    - ¿Puedo consultar la disponibilidad de fármacos?
+    - ¿Hay farmacia cerca de la clínica?
+    - ¿Tienen algún servicio de entrega de medicamentos?
+    - ¿La clínica vende medicamentos para adultos y niños?
+    - ¿Dónde puedo pagar por los medicamentos?
 
 #-----------------------------------------------Intenciones de chatbox con MYSQL
 
@@ -325,37 +691,113 @@ nlu:
     - Quisiera saber la fecha de mi consulta
     - ¿A qué hora es mi cita médica?
     - ¿Puedes decirme cuándo tengo cita con el doctor?
-    - ¿Dónde puedo ver mis citas programadas?    
+    - ¿Dónde puedo ver mis citas programadas?
+    - ¿Cuál es la fecha de mi próxima consulta?
+    - ¿Cuándo es mi cita con el médico?
+    - ¿Puedo saber la hora de mi consulta?
+    - ¿Tienen registro de mis próximas citas?
+    - ¿Me puedes indicar cuándo es mi cita?
+    - Quiero revisar mis citas médicas
+    - ¿Cuál es la hora de mi próxima consulta?
+    - ¿Dónde puedo consultar mis citas médicas?
+    - ¿A qué hora tengo que presentarme al hospital?
+    - ¿Puedo verificar mi cita médica?
+    - ¿Cuándo es mi consulta con el doctor?
+    - ¿Cuál es la agenda de mis citas?
+    - Necesito información sobre mis próximas citas
+    - ¿Me puedes decir la fecha de mi cita médica?
+    - ¿Cómo puedo ver mis citas programadas?
+    - ¿Cual es mi proxima cita  
 
 - intent: diagnostico_medico
   examples: |
-    - ¿Cual fue mi diagnostico de mi ultima cita?
-    - Quisiera saber mi diagnostico
-    - Podria ver el diagnostico del medico
-    - ¿Puedes decirme que me diagnostico el medico
-    - Dónde puedo saber mi diagnostico dado por el medico?    
+    - ¿Cuál fue mi diagnóstico de mi última cita?
+    - Quisiera saber mi diagnóstico
+    - Podría ver el diagnóstico del médico
+    - ¿Puedes decirme qué me diagnosticó el médico?
+    - ¿Dónde puedo saber mi diagnóstico dado por el médico?
+    - ¿Qué diagnóstico me dio el doctor?
+    - ¿Puedo consultar el resultado de mi diagnóstico?
+    - Necesito ver el diagnóstico de mi última consulta
+    - ¿Cuál es el resultado médico de mi cita?
+    - ¿Qué me diagnosticaron en la consulta pasada?
+    - Quiero revisar mi diagnóstico médico
+    - ¿Dónde encuentro el diagnóstico de la cita?
+    - ¿Cuál fue la evaluación del doctor?
+    - ¿Qué me dijo el médico sobre mi salud?
+    - ¿Puedo ver el diagnóstico del doctor?
+    - Me gustaría saber el diagnóstico médico reciente
+    - ¿Cómo puedo revisar el diagnóstico que me dieron?
+    - ¿Qué diagnóstico tengo según la última consulta?
+    - ¿Cuál es el resultado del examen médico?
+    - ¿Dónde está mi diagnóstico médico registrado?   
 
 - intent: recomendaciones_medica
   examples: |
-    - ¿Que me recomienda el medico?
+    - ¿Qué me recomienda el médico?
     - ¿Cuál es el consejo del doctor?
     - ¿Tienes alguna recomendación médica para mí?
     - ¿Qué cuidados debo seguir según el médico?
     - ¿Qué tratamiento me sugiere el doctor?
+    - ¿Cómo debo cuidarme según el médico?
+    - ¿Qué indicaciones me dio el doctor?
+    - ¿Qué precauciones debo tomar?
+    - ¿Qué pautas de salud me recomienda el médico?
+    - ¿Qué pasos debo seguir después de la consulta?
+    - ¿Cuáles son las recomendaciones médicas para mí?
+    - ¿Qué cuidados especiales debo tener?
+    - ¿Qué consejos médicos me pueden ayudar?
+    - ¿Cómo seguir correctamente el tratamiento?
+    - ¿Qué me aconseja el doctor para mejorar mi salud?
+    - ¿Qué instrucciones me dio el médico?
+    - ¿Qué debo hacer según las indicaciones médicas?
+    - ¿Qué recomienda el doctor para mi condición?
+    - ¿Qué me sugiere el médico para recuperarme?
+    - ¿Qué medidas debo tomar para cuidar mi salud?
     
 
 - intent: sintomas_medica
   examples: |
-    - ¿Cual fue el sintoma de mi consulta?
+   - ¿Cuál fue el síntoma de mi consulta?
     - ¿Qué síntomas tuve en mi última cita?
     - ¿Cuáles fueron los síntomas registrados en mi consulta?
     - ¿Qué síntomas mencioné en mi cita médica?
     - ¿Qué síntomas tengo según mi historial?
+    - Quiero revisar los síntomas de mi última consulta
+    - ¿Qué síntomas reporté al doctor?
+    - ¿Cuáles fueron los problemas de salud que mencioné?
+    - ¿Qué síntomas anotó el médico en mi ficha?
+    - ¿Qué molestias tuve en la última consulta?
+    - ¿Puedo ver los síntomas de mis citas anteriores?
+    - ¿Qué indicaciones dio el doctor según mis síntomas?
+    - ¿Qué síntomas registró el médico en la última cita?
+    - ¿Qué problemas de salud aparecieron en mi última visita?
+    - ¿Qué síntomas tengo en mi historial médico?
+    - Necesito revisar los síntomas reportados al doctor
+    - ¿Qué síntomas fueron evaluados en la consulta?
+    - ¿Qué síntomas tengo actualmente según el médico?
+    - ¿Qué dolencias fueron registradas en la última cita?
+    - ¿Qué síntomas debo informar al doctor en la próxima cita?
 
 - intent: ubicacion_salas_cita
   examples: |
-    - ¿En que hospital y sala es mi proxima cita?
+    - ¿En qué hospital y sala es mi próxima cita?
     - ¿Dónde será mi próxima consulta médica?
     - ¿En qué sala tengo mi cita programada?
     - ¿Cuál es la ubicación de mi próxima cita médica?
     - ¿En qué hospital debo presentarme para mi cita?
+    - ¿Me puedes indicar la sala de mi cita?
+    - ¿Dónde me debo presentar para la consulta?
+    - ¿Cuál es la ubicación exacta de mi próxima cita?
+    - ¿En qué sala del hospital tengo la cita?
+    - ¿Qué hospital y sala debo ir para mi consulta?
+    - ¿Dónde encuentro mi próxima cita médica?
+    - Necesito saber la sala de mi cita médica
+    - ¿Cómo llego a la sala donde será mi cita?
+    - ¿Cuál es la dirección y sala de mi consulta?
+    - ¿Dónde se realizará mi próxima consulta?
+    - ¿En qué lugar del hospital debo ir para la cita?
+    - ¿Me indicas la sala de atención para mi cita?
+    - ¿Cuál es la ubicación dentro del hospital para mi cita?
+    - ¿Dónde está programada mi próxima cita?
+    - ¿Cuál es la ubicación de la sala de mi cita médica?

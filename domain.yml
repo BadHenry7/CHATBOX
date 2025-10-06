@@ -50,7 +50,7 @@ entities:
 slots:
   cedula:
     type: text
-    influence_conversation: false
+    influence_conversation: true
     mappings:
       - type: from_entity
         entity: cedula
@@ -128,10 +128,11 @@ responses:
     - text: "jeje, hola, ¿como estas? 😄"
   
   utter_Primeros_auxilios:
-    - text: "Ante una emergencia aplica primeros auxilios básicos: verifica la conciencia, llama a emergencias y realiza las maniobras necesarias de acuerdo a la situación."
+    - text: "Ante una emergencia aplica primeros auxilios básicos: verifica la conciencia, llama a emergencias y realiza las maniobras necesarias de acuerdo a la situación. Aqui un video de ayuda"
+      image: "https://www.youtube.com/live/0UFxmFCR1AA?si=ayR9KnA_nRuHRbJo  o este otro: https://youtu.be/O1AOt_s1NzM?si=rnYFvfQ6zl_uVi6n"
   
   utter_Horario_de_atencion:
-    - text: "Nuestro horario de atención de servicio al cliente es de lunes a viernes de 7:00 a.m. a 5:00 p.m. y sábados y domingos de 8:00 a.m. a 12:00 p.m, y en el hospital es 24/7"
+    - text: "Nuestro horario de atención de servicio al cliente es de lunes a viernes de 7:00 a.m. a 5:00 p.m. y sábados y domingos de 8:00 a.m. a 3:00 p.m, y en nuestra pagina Hospital es 24/7"
     
   utter_Pedir_incapacidad:
     - text: "Para solicitar una incapacidad debe entrar a la opcion 'Incapacidad', y recuerde que para generar una incapacidad el medico la debe generar en la consulta"
@@ -140,16 +141,16 @@ responses:
     - text: "Puedes comunicarte con nosotros al correo hostipalinc.github@gmail.com"
 
   utter_Ejercicios:
-    - text: "Se recomienda hacer al menos 150 minutos de ejercicio moderado o 75 minutos de ejercicio intenso a la semana"
+    - text: "Se recomienda hacer al menos 150 minutos de ejercicio moderado o 75 minutos de ejercicio intenso a la semana  Esto puede distribuirse en sesiones de 30 minutos, 5 días a la semana."
 
   utter_Emergencias:
-    - text: "En caso de emergencias graves como desmayos, infartos o caídas severas, llama inmediatamente al 123 o acude a la urgencia más cercana."
+    - text: "En caso de emergencias graves como desmayos, infartos o caídas severas, llama inmediatamente al 123, 119 o acude a la urgencia más cercana."
 
   utter_Atencion_de_urgencias:
     - text: "El servicio de urgencias está disponible las 24 horas, los 7 días de la semana."
   
   utter_ubicacion_clinica:
-    - text: "Estamos ubicados en la calle 45 con cra 20, frente a la estación de transmetro de la 21."
+    - text: "En la vista ubicaciones del pie de  encotraras los hospitales mas cercanos"
 
   utter_Corregir_informacion:
     - text: "Para actualizar tu información personal, acércate a recepción o debes enviar un correo al hostipalinc.github@gmail.com"
@@ -159,7 +160,7 @@ responses:
       image: "https://youtu.be/zGLVMjbXiHY?si=zZQoLBlztIhWSDIX"
 
   utter_farmacia_disponible:
-    - text: "Contamos con farmacia en frente de la clínica, abierta de lunes a sábado en horario de atención habitual, de lunes a viernes 7 am a 8 pm y sábados de 8 am a 12 pm"
+    - text: "No contamos con farmacia disponible en el hospital, pero puedes encontrar farmacias cercanas en google maps"
 
 
 #--------------------------Utter con MYSQL

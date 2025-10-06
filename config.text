@@ -2,7 +2,7 @@
  Pasos para creacion de chatbox(rasa)
  
  #Creacion del entorno virtual
--python -m venv myvenv   O       py -3.10 -m venv myvenv
+-python -m venv myvenv   O       py -3.10 -m venv myvenv  o  python3.10 -m venv myvenv  
 
 #Entrar al entorno virtual:
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
@@ -32,7 +32,9 @@ rasa init
 
 
 
-
+#Para whatsapp:
+ngrok http 5005
+https://e249b80111f0.ngrok-free.app/webhooks/twilio/webhook
 
 
 
