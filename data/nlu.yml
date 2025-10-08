@@ -121,6 +121,7 @@ nlu:
 
 - intent: mood_great
   examples: |
+    - Bien
     - perfecto
     - genial
     - increíble
@@ -453,7 +454,7 @@ nlu:
 
 - intent: Horario_de_atencion
   examples: |
-   - ¿A qué hora atienden?
+    - ¿A qué hora atienden?
     - ¿Cuándo abren?
     - ¿A qué hora abren?
     - ¿Cuál es su horario de atención?
@@ -758,7 +759,7 @@ nlu:
 
 - intent: sintomas_medica
   examples: |
-   - ¿Cuál fue el síntoma de mi consulta?
+    - ¿Cuál fue el síntoma de mi consulta?
     - ¿Qué síntomas tuve en mi última cita?
     - ¿Cuáles fueron los síntomas registrados en mi consulta?
     - ¿Qué síntomas mencioné en mi cita médica?
